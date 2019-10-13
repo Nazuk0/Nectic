@@ -1,0 +1,209 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    color: black;
+}
+
+footer {
+    margin-top: 184px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+.sidenav {
+    width: 180px;
+    position: fixed;
+    z-index: 1;
+    top: 130px;
+    left: 10px;
+    background: #eee;
+    overflow-x: hidden;
+    padding-bottom: 200px;
+}
+
+.sidenav2 {
+    width: 180px;
+    position: fixed;
+    z-index: 1;
+    top: 350px;
+    left: 10px;
+    background: #eee;
+    overflow-x: hidden;
+    margin-top: 65px;
+}
+
+.sidenav a, .sidenav2 a {
+    color: black;
+    padding-left: 30px;
+    font-size: 16px;
+}
+
+.sidenav h2, .sidenav2 h2 {
+    padding-left: 10px;
+}
+
+.main {
+    margin-left: 140px;
+    /* Same width as the sidebar + left position in px */
+    font-size: 28px;
+    /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.row
+{
+    margin-top: 10px;
+    margin-left: 190px;
+}
+
+.row img {
+    height: 295px;
+    width: 230px;
+    margin: 10px 20px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    height: 60px;
+    width: 232px;
+    left: 35px;
+    top: 245px;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.like-btn {
+    position: absolute;
+    top: -2px;
+    left: 5px;
+    display: inline-block;
+    background: url('../images/twitter-heart.png');
+    width: 70px;
+    height: 70px;
+    background-size: 2900%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+/*called with the js when the user clicks on the like button*/
+.is-active {
+    animation-name: animate;
+    animation-duration: .8s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(28);
+    animation-fill-mode: forwards;
+}
+
+/*like button animation*/
+@keyframes animate {
+    0% {
+        background-position: left;
+    }
+    50% {
+        background-position: right;
+    }
+    100% {
+        background-position: right;
+    }
+}
+
+.badge {
+    background-color: white;
+    color: #333333;
+}
+
+/*Number of the cart*/
+.shake {
+    animation: shake .3s 2 alternate;
+}
+
+.cart-run {
+    animation: cart-run .6s;
+}
+
+.glow {
+    animation: glow .6s;
+}
+
+@keyframes shake {
+    33% {
+        transform: rotate(30deg);
+    }
+    66% {
+        transform: rotate(-30deg);
+    }
+}
+
+@keyframes cart-run {
+    from {
+        left: -30px;
+        opacity: 0
+    }
+    to {
+        left: 0;
+        opacity: 1
+    }
+}
+
+@keyframes glow {
+    0% {
+        background-color: #333333;
+    }
+    50% {
+        background-color: adjust-hue(#333333, -35%);
+    }
+    100% {
+        background-color: #333333;
+    }
+}
+
+.favorites {   
+    width: 70px;
+    height: 70px;
+}
+
+#shopping-cart-btn{
+    border: none;
+}
+
+.add-item{
+    padding : 5px 5px 5px 5px;
+    margin-left : 90px;
+    margin-top: -5px;
+    color : white;
+    background-color:rgba(0, 0, 0, 0.5);
+    border : none;
+}

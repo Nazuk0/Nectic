@@ -1,0 +1,122 @@
+#banner {
+	padding: 0;
+}
+
+h1 {
+	color: floralwhite;
+	text-align: center;
+	font-size: 60px;
+	font-family: 'Crete Round';
+	position: fixed;
+	top: 0;
+	background: grey;
+	width: 100vw;
+	z-index: 100;
+	margin: 0;
+	padding: 0;
+}
+
+#navbar {
+	position: fixed;
+	top: 65px;
+	width: 100vw;
+	z-index: 100;
+}
+
+#footer {
+	background: black;
+	position: relative;
+	top: 15px;
+}
+
+#footer h3 {
+	text-align: center;
+	color: white;
+}
+
+h6 {
+	color: black;
+	top: 300 px;
+	text-align: justify;
+	margin-top: 50px;
+	font-family: "Roboto", sans-serif;
+	font-size: 120%;
+	font-weight: bold;
+	margin-right: 0px;
+	margin-left: 5%;
+}
+
+p {
+	color: black;
+	text-align: justify;
+	font-family: "Roboto", sans-serif;
+	font-size: 100%;
+	margin-left: 10%;
+	margin-right : 2%;
+}
+
+.firstH2
+/* First header*/
+
+	{
+	margin-top: 12.5%;
+	margin-left: 10%;
+	font-family: "Roboto", sans-serif;
+}
+
+.oddH2
+/* Header with an odd number are on the left*/
+
+	{
+	margin-left: 10%;
+	font-family: "Roboto", sans-serif;
+}
+
+.evenH2
+/* Header with an even number are on the right*/
+
+	{
+	margin-left: 50%;
+	font-family: "Roboto", sans-serif;
+}
+
+.col-md-7 {
+	height: 400px;
+	padding: 0px 0px 0px 0px;
+}
+
+.odd {
+	margin-left:5%;
+	margin-right: 40%;
+}
+
+.even {
+	margin-right: 5%;
+	margin-left: 40%;
+}
+
+.textOdd {
+	padding-right : 5%;
+}
+
+.textEven{
+	padding-left : 5%;
+}
+
+.carousel-indicators li {
+	border-color: black;
+}
+
+/* ADMIN */
+
+.admin
+{
+    background: #fff;
+    padding: 50px; 
+    border-radius: 10px;
+}
+
+.help-inline
+{
+    color: red;
+}
